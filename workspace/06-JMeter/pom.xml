@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.curso.tdd</groupId>
+	<artifactId>06-JMeter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.lazerycode.jmeter</groupId>
+				<artifactId>jmeter-maven-plugin</artifactId>
+				<version>2.7.0</version>
+				<executions>
+					<!-- Run JMeter tests -->
+					<execution>
+						<id>jmeter-tests</id>
+						<goals>
+							<goal>jmeter</goal>
+						</goals>
+					</execution>
+					<!-- Fail build on errors in test -->
+					<execution>
+						<id>jmeter-check-results</id>
+						<goals>
+							<goal>results</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.5.0.1254</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

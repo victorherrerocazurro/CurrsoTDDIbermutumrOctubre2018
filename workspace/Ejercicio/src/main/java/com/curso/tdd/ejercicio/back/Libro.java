@@ -6,4 +6,9 @@ public class Libro {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Object getAutor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

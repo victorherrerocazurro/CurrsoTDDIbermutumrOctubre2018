@@ -10,7 +10,7 @@ public class PruebaAltaLibrosBack {
 
 	@Test
 	public void test() {
-		servicioLibros.alta(libros);
+		ServicioLibros sut = new ServicioLibros();
 		
 		fail("Not yet implemented");
 	}
