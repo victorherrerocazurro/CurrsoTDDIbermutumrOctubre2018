@@ -1,0 +1,25 @@
+Requisitos:
+	- Aplicar TDD
+	- Realizar UT, IT Totales (Test de Humo)
+
+Enunciado: (Es defectuoso, se aceptan preguntas)
+	- Se quiere un formulario de alta de libros en "el sistema".
+
+Aplicacion 1:
+	- Los libros se han de persistir en Apache Derby.
+	- El libro tiene titulo y autor de tipo String. Son obligatorios. Tiene 100 caracteres maximo.
+	- No se aceptan repetidos.
+	- El formulario aceptara el titulo y el autor.
+
+Pensamientos:
+	- Los datos llegaran a la aplicacion por medio de un formulario. (Front)
+
+
+
+	- Las funcionalidades a implementar son: (Back)
+		- dar de alta un libro. 
+		- dar de alta un conjunto de libros.
+	- ¿Como verifico que se ha realizado la tarea?
+		- Conocer que pasa dentro del servicio
+		- Conocer el feedback
+	- Para establer el rango de datos de prueba, que condiciones han de cumplir el titulo y el autor, Pues el autor debe tener 3 textos separados por espacio, en caso de no tenerlos se producira un error
